@@ -63,7 +63,58 @@ document.addEventListener('DOMContentLoaded', () => {
       const name = document.getElementById('emailName').value;
       const email = document.getElementById('emailAddress').value;
       // Replace BELOW_WEBHOOK_URL with your Google Apps Script / webhook endpoint
-      const webhook = 'REPLACE_WITH_YOUR_WEBHOOK_URL';
+      // after (example)
+const webhook = 'https://script.google.com/macros/s/AKfycbx...your_deployed_id.../exec';
+
+// Email collector (home page)
+const emailForm = document.getElementById('emailForm');
+if (emailForm) {
+  emailForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('emailName').value;
+    const email = document.getElementById('emailAddress').value;
+    fetch(webhook, {
+      method: 'POST',
+      body: JSON.stringify({ formType: 'subscribe', name, email }),
+      headers: { 'Content-Type': 'application/json' }
+    }).then(r => r.json()).then(res => {
+      if (res.status === 'ok') alert('Subscribed — thank you!');
+      else alert('Submission failed.');
+      emailForm.reset();
+    }).catch(err => {
+      console.error(err);
+      alert('Submission failed (network).');
+    });
+  });
+}
+
+// Contact form (contact.html)
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = {
+      formType: 'contact',
+      name: document.getElementById('cname').value,
+      email: document.getElementById('cemail').value,
+      phone: document.getElementById('cphone').value,
+      message: document.getElementById('cmessage').value
+    };
+    fetch(webhook, {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: { 'Content-Type': 'application/json' }
+    }).then(r => r.json()).then(res => {
+      if (res.status === 'ok') alert('Message sent — thank you!');
+      else alert('Failed to send. Check webhook.');
+      contactForm.reset();
+    }).catch(err => {
+      console.error(err);
+      alert('Submission failed (network).');
+    });
+  });
+}
+
       if(webhook === 'REPLACE_WITH_YOUR_WEBHOOK_URL'){
         alert('Thank you! (Demo)\nTo store emails to a sheet, set up a Google Apps Script webhook and paste its URL into script.js');
         emailForm.reset();
