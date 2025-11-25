@@ -64,8 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const email = document.getElementById('emailAddress').value;
       // Replace BELOW_WEBHOOK_URL with your Google Apps Script / webhook endpoint
       // after (example)
-const webhook =' https://script.google.com/macros/s/AKfycbwHZ2E53FtngpfLOfwh08kn0aSsxElqfI0klhHGRp4EZ3_7Ih4hqVWg3oP0MuzgorMJMQ/exec';
-// ---------- webhook URL ----------
 const webhook = 'https://script.google.com/macros/s/AKfycabwHZE2E53FtngpfL0fwh08kn0aSsxElqfl0klhHGRp4EZ3_7lh4hqVWg3oP0MuzgorMJMQ/exec';
 
 // Email collector (home page)
