@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Editkaro.in — Contact</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src='/mnt/data/Screenshot 2025-11-25 144917.png' alt="Editkaro logo" class="logo-img" />
+        <div class="brand-text">
+          <h1>Editkaro.in</h1>
+          <p class="sub">Video Editing & Social Media Marketing</p>
+        </div>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section>
+      <h2>Contact Us</h2>
+      <p>Want to work together? Fill the form below and we'll get back to you.</p>
+
+      <form id="contactForm">
+        <input type="text" id="cname" name="name" placeholder="Your name" required />
+        <input type="email" id="cemail" name="email" placeholder="Email address" required />
+        <input type="tel" id="cphone" name="phone" placeholder="Phone (optional)" />
+        <textarea id="cmessage" name="message" rows="6" placeholder="Message" required></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+
+      <p class="muted">This form is configured to POST to a Google Apps Script / webhook URL. See README for setup instructions.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Editkaro.in · Built with HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Editkaro.in — Portfolio</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src='/mnt/data/Screenshot 2025-11-25 144917.png' alt="Editkaro logo" class="logo-img" />
+        <div class="brand-text">
+          <h1>Editkaro.in</h1>
+          <p class="sub">Video Editing & Social Media Marketing</p>
+        </div>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <section class="intro">
+      <h2>Showcase</h2>
+      <p>Explore Editkaro.in’s work across categories — hover to preview, click to play.</p>
+    </section>
+
+    <nav class="filters" aria-label="Portfolio filters">
+      <button class="btn ghost active" id="allBtn">All</button>
+      <button class="btn" data-filter="short">Short-form</button>
+      <button class="btn" data-filter="long">Long-form</button>
+      <button class="btn" data-filter="gaming">Gaming</button>
+      <button class="btn" data-filter="ads">Ads</button>
+      <button class="btn" data-filter="doc">Documentary</button>
+      <button class="btn" data-filter="ecom">eCommerce</button>
+      <button class="btn" data-filter="anime">Anime</button>
+    </nav>
+
+    <section id="gallery" class="grid" aria-live="polite">
+      <!-- Sample cards: replace data-videoid with real YouTube IDs -->
+      <!-- Row 1 -->
+      <article class="card" data-category="short gaming">
+        <div class="thumb" data-videoid="dQw4w9WgXcQ" style="background-image:url('https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg')">
+          <div class="play">▶</div>
+        </div>
+        <div class="meta">
+          <h3>Fast Cut — Gaming Highlights</h3>
+          <p class="cat">Gaming · Short</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="long doc">
+        <div class="thumb" data-videoid="3JZ_D3ELwOQ" style="background-image:url('https://img.youtube.com/vi/3JZ_D3ELwOQ/hqdefault.jpg')">
+          <div class="play">▶</div>
+        </div>
+        <div class="meta">
+          <h3>Documentary Grade Color</h3>
+          <p class="cat">Documentary · Long</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="ads ecom">
+        <div class="thumb" data-videoid="V-_O7nl0Ii0" style="background-image:url('https://img.youtube.com/vi/V-_O7nl0Ii0/hqdefault.jpg')">
+          <div class="play">▶</div>
+        </div>
+        <div class="meta">
+          <h3>eCommerce Promo — Clean Cut</h3>
+          <p class="cat">eCommerce Ad</p>
+        </div>
+      </article>
+
+      <!-- Add more items (12 total) -->
+      <article class="card" data-category="short ads">
+        <div class="thumb" data-videoid="9bZkp7q19f0" style="background-image:url('https://img.youtube.com/vi/9bZkp7q19f0/hqdefault.jpg')">
+          <div class="play">▶</div>
+        </div>
+        <div class="meta">
+          <h3>Snackable Ad — Quick CTA</h3>
+          <p class="cat">Ads · Short</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="gaming short">
+        <div class="thumb" data-videoid="M7FIvfx5J10" style="background-image:url('https://img.youtube.com/vi/M7FIvfx5J10/hqdefault.jpg')">
+          <div class="play">▶</div>
+        </div>
+        <div class="meta">
+          <h3>Clutch Moments — Montage</h3>
+          <p class="cat">Gaming · Short</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="long ecom">
+        <div class="thumb" data-videoid="hY7m5jjJ9mM" style="background-image:url('https://img.youtube.com/vi/hY7m5jjJ9mM/hqdefault.jpg')">
+          <div class="play">▶</div>
+        </div>
+        <div class="meta">
+          <h3>Brand Story — Long Form</h3>
+          <p class="cat">eCommerce · Long</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="doc long">
+        <div class="thumb" data-videoid="kXYiU_JCYtU" style="background-image:url('https://img.youtube.com/vi/kXYiU_JCYtU/hqdefault.jpg')">
+          <div class="play">▶</div>
+        </div>
+        <div class="meta">
+          <h3>Visual Essay — Storytelling</h3>
+          <p class="cat">Documentary · Long</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="ads short">
+        <div class="thumb" data-videoid="e-ORhEE9VVg" style="background-image:url('https://img.youtube.com/vi/e-ORhEE9VVg/hqdefault.jpg')">
+          <div class="play">▶</div>
+        </div>
+        <div class="meta">
+          <h3>Product Teaser — Short</h3>
+          <p class="cat">Ads · Short</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="short anime">
+        <div class="thumb" data-videoid="fJ9rUzIMcZQ" style="background-image:url('https://img.youtube.com/vi/fJ9rUzIMcZQ/hqdefault.jpg')">
+          <div class="play">▶</div>
+        </div>
+        <div class="meta">
+          <h3>Anime Edit — Color Pop</h3>
+          <p class="cat">Anime · Short</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="gaming long">
+        <div class="thumb" data-videoid="LXb3EKWsInQ" style="background-image:url('https://img.youtube.com/vi/LXb3EKWsInQ/hqdefault.jpg')">
+          <div class="play">▶</div>
+        </div>
+        <div class="meta">
+          <h3>Gameplay Walkthrough — Long</h3>
+          <p class="cat">Gaming · Long</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="ecom short">
+        <div class="thumb" data-videoid="OPf0YbXqDm0" style="background-image:url('https://img.youtube.com/vi/OPf0YbXqDm0/hqdefault.jpg')">
+          <div class="play">▶</div>
+        </div>
+        <div class="meta">
+          <h3>Shop Now — Quick Cut</h3>
+          <p class="cat">eCommerce · Short</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="doc short">
+        <div class="thumb" data-videoid="60ItHLz5WEA" style="background-image:url('https://img.youtube.com/vi/60ItHLz5WEA/hqdefault.jpg')">
+          <div class="play">▶</div>
+        </div>
+        <div class="meta">
+          <h3>Micro Doc — Human Interest</h3>
+          <p class="cat">Documentary · Short</p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Lightbox / Modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <div class="lightbox-content" role="dialog" aria-modal="true">
+      <button class="close" id="lbClose" aria-label="Close player">✕</button>
+      <div class="video-wrap" id="videoWrap"></div>
+    </div>
+    <div class="lightbox-backdrop" id="lbBackdrop" tabindex="-1"></div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Editkaro.in — Portfolio demo · Built with HTML, CSS & JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
